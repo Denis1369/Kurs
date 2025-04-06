@@ -1,0 +1,17 @@
+﻿<Window x:Class="Kurs.View.AddRece"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kurs.View"
+        mc:Ignorable="d"
+        Title="AddRece" Height="450" Width="800">
+    <Grid>
+        <DatePicker x:Name="StartD" HorizontalAlignment="Left" Margin="35,34,0,0" VerticalAlignment="Top" Width="180"/>
+        <DatePicker x:Name="EndD" HorizontalAlignment="Left" Margin="235,34,0,0" VerticalAlignment="Top" Width="180"/>
+        <ComboBox x:Name="IdTrack" HorizontalAlignment="Left" Margin="435,34,0,0" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="Note" HorizontalAlignment="Left" Margin="35,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Height="65"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="315,142,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Window>
