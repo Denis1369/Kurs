@@ -19,5 +19,7 @@ public partial class Racer
 
     public virtual Team? IDteamNavigation { get; set; }
 
+    public string Fam => (LastName.Substring(0,3).ToUpper());
+
     public virtual ICollection<RacingResult> RacingResults { get; set; } = new List<RacingResult>();
 }

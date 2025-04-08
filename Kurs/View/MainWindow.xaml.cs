@@ -1,4 +1,7 @@
-﻿using Kurs.View;
+﻿using Kurs.Model;
+using Kurs.View;
+using Kurs.СustomElement;
+using Microsoft.EntityFrameworkCore;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,6 +23,19 @@ namespace Kurs
         public MainWindow()
         {
             InitializeComponent();
+            Load();
+        }
+
+        public void Load() 
+        {
+            using (var context = new Formula12025Context()) 
+            {
+                var list = context.RacingResults.Include(g=>g.FinalPositionNavigation).Include(g => g.IDracerNavigation).ToList();
+                foreach (var item in list) 
+                {
+                    PerList.Items.Add(new RacerCard(item.IDracerNavigation));
+                }
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

@@ -8,8 +8,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="200,139,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="370,144,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="15,19,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="115,22,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+
+        <ListView x:Name="PerList" Width="100" Margin="40" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
 
     </Grid>
 </Window>
