@@ -22,4 +22,5 @@ public partial class Racer
     public string Fam => (LastName.Substring(0,3).ToUpper());
 
     public virtual ICollection<RacingResult> RacingResults { get; set; } = new List<RacingResult>();
+
 }
