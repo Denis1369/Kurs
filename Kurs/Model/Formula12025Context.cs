@@ -16,7 +16,6 @@ public partial class Formula12025Context : DbContext
     {
     }
 
-
     public virtual DbSet<Manager> Managers { get; set; }
 
     public virtual DbSet<Positionscore> Positionscores { get; set; }
